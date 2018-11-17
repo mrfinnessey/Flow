@@ -32,9 +32,12 @@ public class Flow {
 		addSheet.setBounds(0, (int) (screenSize.getHeight() - 160), 50, 50);
 		panel.add(addSheet);
 		frame.pack();
-		frame.setVisible(true);
 		frame.setTitle("Flow Alpha");
+		frame.setVisible(true);
 		
 	}
 	
+	private void processText(String text) {
+		
+	}
 }
