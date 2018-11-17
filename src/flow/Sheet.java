@@ -9,13 +9,15 @@ public class Sheet {
 	int initialSpeech;
 	//M The text of a particular sheet. See below for the format.
 	String text = "";
-	//Plan is to operate like this "(a (1) (2)) (b)"
+	//Plan is to operate like this "0 (a) 0.0 (b) 0.1 (c) 1 (d) / 0.0.0 (e) 0.0.0.0 (f) 0.0.0.1 (g) / etc."
 	//This resolves to:
 	/* a
-	 * - 1
-	 * - 2
-	 * b*/
-	//The current plan is that responses will be put as /'s after each one.
+	 * - b  e
+	 * 		-f
+	 * 		-g
+	 * - c
+	 * d */
+	//Ex: [XYZ supports [XYZ is corrupt / ABC denies XYZ's claim]/ The plan has no solvency]
 	//The total number of sheets in the debate, used for display purposes.
 	static int numberOfSheets = 0;
 	

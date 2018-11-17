@@ -38,20 +38,7 @@ public class Flow {
 	}
 	
 	private void processText(String text) {
-		int parenthesesCounter = 0;
-		boolean countStarted = false;
-		for(int i = 0; i < text.length(); i++) {
-			if(text.charAt(i) == '(') {
-				countStarted = true;
-				parenthesesCounter--;
-			}
-			else if(text.charAt(i) == ')') {
-				if(countStarted) {
-					System.out.println("Error: Invalid Text Storage");
-					System.exit(0);
-				}
-				parenthesesCounter++;
-			}
-		}
+		//Need to make it so that this can pass the text back piece by piece.
+		
 	}
 }
